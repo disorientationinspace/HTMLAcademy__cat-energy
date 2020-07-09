@@ -1,0 +1,37 @@
+{
+  "name": "htmlacademy__pink",
+  "version": "1.0.0",
+  "description": "htmlacademy's layout (PINK) for adaptive page making",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disorientationinspace/HTMLAcademy__pink.git"
+  },
+  "author": "nevermore (disorientationinspace)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/disorientationinspace/HTMLAcademy__pink/issues"
+  },
+  "homepage": "https://github.com/disorientationinspace/HTMLAcademy__pink#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-cwebp": "^3.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-newer": "^1.4.0"
+  }
+}
