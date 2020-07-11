@@ -1,0 +1,32 @@
+.button {
+  width: 280px;
+  padding: 10px;
+
+  border: none;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  font-family: $OswaldRegular;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: $active;
+
+  &:hover {
+    background-color: $active-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 240px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 0;
+  }
+}

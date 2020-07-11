@@ -11,58 +11,51 @@
 
 
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header main-header--no-js">
 
-      <!-- Logo -->
-      <p class="main-header__logo">
-        <picture>
-          <source type="image/webp" media = "(min-width: 1300px)"
-            srcset = ".. 1x,
-                      .. 2x">
-          <source type="image/webp" media = "(min-width: 768px)"
-            srcset = ".. 1x,
-                      .. 2x">
+      <div class="main-header__wrapper">
+          <!-- Logo -->
+        <div class="main-header__head">
+          <a class="main-header__logo">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="images/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
 
-          <source media = "(min-width: 1300px)"
-            srcset = ".. 1x,
-                      .. 2x">
+                <img src="images/logo-mobile.svg" alt="Логотип сайта 'Cat Energy'" class="main-header__image">
+              </picture>
+          </a>
 
-          <source media = "(min-width: 768px)"
-            srcset = ".. 1x,
-                      .. 2x">
+          <!-- Navigation OPEN button -->
+          <button class="main-header__open main-header__button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-          <img src=".." alt="Логотип сайта 'Cat Energy'" class="main-header__image">
-        </picture>
-      </p>
+          <!-- Navigation CLOSE button -->
+          <button class="main-header__close main-header__button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
 
 
-      <!-- Navigation -->
-      <nav class="main-header__navigation main-navigation main-navigation--intro-background">
+        <!-- Navigation -->
+        <nav class="main-header__navigation main-navigation main-header__navigation--intro-background">
 
-        <!-- Navigation OPEN button -->
-        <button class="main-navigation__open">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+          <!-- Navigation LIST -->
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item main-navigation__item--current">
+              <a class="main-navigation__link">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="catalog.html" class="main-navigation__link">Каталог продукции</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="form.html" class="main-navigation__link">Подбор программы</a>
+            </li>
 
-        <!-- Navigation CLOSE button -->
-        <button class="main-navigation__close">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
+          </ul>
+        </nav>
+      </div>
 
-        <!-- Navigation LIST -->
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="catalog.html" class="main-navigation__link">Каталог продукции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="form.html" class="main-navigation__link">Подбор программы</a>
-          </li>
-
-        </ul>
-      </nav>
 
 
       <!-- Intro -->
@@ -74,21 +67,21 @@
         <p class="intro__image-container">
           <picture>
             <source type="image/webp" media = "(min-width: 1300px)"
-              srcset = ".. 1x,
-                        .. 2x">
+              srcset = "images/index-can-desktop@1x.webp 1x,
+                        images/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media = "(min-width: 768px)"
-              srcset = ".. 1x,
-                        .. 2x">
+              srcset = "images/index-can-tablet@1x.webp 1x,
+                        images/index-can-tablet@2x.webp 2x">
 
             <source media = "(min-width: 1300px)"
-              srcset = ".. 1x,
-                        .. 2x">
+              srcset = "images/index-can-desktop@1x.png 1x,
+                        images/index-can-desktop@2x.png 2x">
 
             <source media = "(min-width: 768px)"
-              srcset = ".. 1x,
-                        .. 2x">
+              srcset = "images/index-can-tablet@1x.png 1x,
+                        images/index-can-tablet@2x.png 2x">
 
-            <img src=".." alt="Коробка с кормом 'CAT ENERGY PRO (курица)'" class="intro__image">
+            <img src="images/index-can-mobile@1x.png" srcset = "images/index-can-mobile@2x.png 2x" alt="Коробка с кормом 'CAT ENERGY PRO (курица)'" width = "280" height = "272" class="intro__image">
           </picture>
         </p>
 

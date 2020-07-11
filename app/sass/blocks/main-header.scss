@@ -1,0 +1,150 @@
+.main-header {
+
+  &__head {
+    padding: 23px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+
+    border-bottom: 1px solid $lightgrey;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+
+    grid-column: span 2;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  &__close {
+    display: none;
+
+    margin-right: 3px;
+
+    width: 18px;
+    height: 18px;
+    background: deeppink;
+  }
+
+  &__open {
+    position: relative;
+
+    width: 24px;
+    height: 18px;
+
+    background-color: coral;
+  }
+
+  &__navigation {
+    grid-column: 1 / -1;
+    display: none;
+  }
+
+  &--no-js {
+    .main-header__open {
+      display: none;
+    }
+
+    .main-header__navigation {
+      display: grid;
+    }
+  }
+
+  &--active {
+    .main-header__close {
+      display: block;
+    }
+
+    .main-header__open {
+      display: none;
+    }
+
+    .main-header__navigation {
+      display: grid;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      padding-right: 20px;
+      justify-content: space-between;
+    }
+
+    &--active &__button,
+    &--no-js &__button,
+    &__button {
+      display: none;
+    }
+
+    &__head {
+      grid-template-columns: 1fr;
+      border: none;
+    }
+
+    &__logo {
+      width: 175px;
+      height: 60px;
+    }
+
+    &__navigation {
+      grid-column: auto;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    &__wrapper {
+      width: 1220px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    &__logo {
+      width: 200px;
+      height: 60px;
+    }
+
+    &__navigation--intro-background {
+        position: relative;
+        &::after {
+          z-index: -1;
+          position: absolute;
+          content: '';
+          right: -40px;
+          top: -40px;
+          width: 700px;
+          height: 680px;
+          background-color: $active;
+          background-size: 100%;
+          background-image: url("../images/index-background-desktop@1x.png");
+          @include for-retina {
+            background-image: url("../images/index-background-desktop@2x.png");
+          }
+        }
+    }
+  }
+}
