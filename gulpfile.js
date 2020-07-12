@@ -21,7 +21,7 @@ const uglify         = require("gulp-uglify");
 function styles() {
   return src("app/sass/app.scss")
         .pipe(sass())
-        .pipe(autoprefixer( { overrideBrowserlist: ["last 15 versions"] } ))
+        .pipe(autoprefixer( { overrideBrowserlist: ["last 15 versions"]} ))
         .pipe(cleancss())
         .pipe(dest("dist/css"))
         .pipe(browserSync.stream())

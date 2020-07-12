@@ -97,6 +97,13 @@
     &__link {
       font-size: 20px;
       color: white;
+
+      &[href]:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      &[href]:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     &__item--current::after {

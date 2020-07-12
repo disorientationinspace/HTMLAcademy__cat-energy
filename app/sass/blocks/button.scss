@@ -12,6 +12,7 @@
   color: white;
 
   background-color: $active;
+  cursor: pointer;
 
   &:hover {
     background-color: $active-hover;

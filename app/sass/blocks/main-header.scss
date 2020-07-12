@@ -1,4 +1,5 @@
 .main-header {
+  user-select: none;
 
   &__head {
     padding: 23px 20px;
@@ -18,11 +19,15 @@
 
     grid-column: span 2;
 
-    &:hover {
+    &[href] {
+      cursor: pointer;
+    }
+
+    &[href]:hover {
       opacity: 0.6;
     }
 
-    &:active {
+    &[href]:active {
       opacity: 0.3;
     }
   }
@@ -40,7 +45,8 @@
 
     width: 18px;
     height: 18px;
-    background: deeppink;
+
+    background-image: url("../images/cross-icon.svg");
   }
 
   &__open {
@@ -49,7 +55,7 @@
     width: 24px;
     height: 18px;
 
-    background-color: coral;
+    background-image: url("../images/open-icon.svg");
   }
 
   &__navigation {
@@ -101,6 +107,10 @@
     &__head {
       grid-template-columns: 1fr;
       border: none;
+    }
+
+    &__navigation {
+      display: grid;
     }
 
     &__logo {
