@@ -43,7 +43,7 @@ function startwatch() {
   watch("app/**/*.html", html);
   watch("dist/**/*.html").on("change", browserSync.reload);
   watch("app/images", series(img, svg));
-  watch(["dist/images/*.jpg", "dist/images/*.png"], webp);
+  watch(["app/images/*.jpg", "app/images/*.png"], webp);
   watch("app/js", js);
 }
 

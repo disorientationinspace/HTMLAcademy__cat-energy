@@ -129,6 +129,11 @@
 
     &__logo {
       justify-content: flex-start;
+      border: none;
+    }
+
+    &__social-list {
+      border: none;
     }
 
     &__link {

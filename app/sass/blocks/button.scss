@@ -10,6 +10,8 @@
   font-family: $OswaldRegular;
   text-transform: uppercase;
   color: white;
+  text-decoration: none;
+  text-align: center;
 
   background-color: $active;
   cursor: pointer;
@@ -21,6 +23,21 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &--grey {
+    background-color: $whitegrey;
+    color: #444444;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $lightwhitegrey;
+    }
+
+    &:active {
+      background-color: $lightwhitegrey;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -29,5 +46,6 @@
     font-size: 20px;
     line-height: 20px;
     padding: 15px 0;
+
   }
 }
