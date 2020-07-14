@@ -1,0 +1,60 @@
+.active-title {
+  display: flex;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $OswaldRegular;
+  font-weight: 1;
+  width: 100%;
+
+  &__text {
+    margin-right: 24px;
+  }
+
+  &::after,
+  &::before {
+    display: block;
+    content: '';
+    height: 3px;
+    width: 10px;
+
+    margin-top: 5px;
+    align-self: center;
+
+    background-color: $active;
+  }
+
+  &::after {
+    flex-grow: 1;
+  }
+
+  &::before {
+    left: -24px;
+    position: relative;
+    width: 6.25%;
+  }
+ }
+
+ @media (min-width: $tablet-width) {
+   .active-title {
+     font-size: 36px;
+     line-height: 36px;
+
+     &__text {
+       margin-right: 40px;
+     }
+
+     &::before {
+       left: -40px;
+
+       width: calc(70px + (100% - 768px)/2);
+     }
+   }
+ }
+
+ @media (min-width: $desktop-width) {
+   .active-title {
+     &::before {
+       width: calc(110px + (100% - 1440px)/2);
+     }
+   }
+ }

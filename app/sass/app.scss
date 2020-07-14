@@ -1,7 +1,11 @@
 @import "global/scaffolding.scss";
 @import "global/fonts.scss";
 
+@import "blocks/green-title.scss";
 @import "blocks/button.scss";
+
+@import "blocks/page-main.scss";
+
 @import "blocks/main-header.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/intro.scss";
@@ -15,3 +19,4 @@
 
 @import "blocks/catalog.scss";
 @import "blocks/additional.scss";
+@import "blocks/program.scss";

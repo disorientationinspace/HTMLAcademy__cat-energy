@@ -1,42 +1,44 @@
 .additional {
   padding-bottom: 40px;
 
-  &__title {
-    display: flex;
-    font-size: 24px;
-    line-height: 24px;
-    font-family: $OswaldRegular;
-    font-weight: 1;
-    width: 100%;
 
-    &-text {
-      margin-right: 24px;
-    }
-
-    &::after,
-    &::before {
-      display: block;
-      content: '';
-      height: 3px;
-      width: 10px;
-
-      margin-top: 5px;
-      // flex-grow: 1;
-      align-self: center;
-
-      background-color: $active;
-    }
-
-    &::after {
-      flex-grow: 1;
-    }
-
-    &::before {
-      left: -24px;
-      position: relative;
-      width: 6.25%;
-    }
-   }
+  //  Now it's .GREEN-TITLE
+  //
+  // &__title {
+  //   display: flex;
+  //   font-size: 24px;
+  //   line-height: 24px;
+  //   font-family: $OswaldRegular;
+  //   font-weight: 1;
+  //   width: 100%;
+  //
+  //   &-text {
+  //     margin-right: 24px;
+  //   }
+  //
+  //   &::after,
+  //   &::before {
+  //     display: block;
+  //     content: '';
+  //     height: 3px;
+  //     width: 10px;
+  //
+  //     margin-top: 5px;
+  //     align-self: center;
+  //
+  //     background-color: $active;
+  //   }
+  //
+  //   &::after {
+  //     flex-grow: 1;
+  //   }
+  //
+  //   &::before {
+  //     left: -24px;
+  //     position: relative;
+  //     width: 6.25%;
+  //   }
+  //  }
 
    &__list {
      width: 87.5%;
@@ -210,20 +212,20 @@
       margin-top: 25px;
     }
 
-    &__title {
-      font-size: 36px;
-      line-height: 36px;
-
-      &-text {
-        margin-right: 40px;
-      }
-
-      &::before {
-        left: -40px;
-
-        width: calc(70px + (100% - 768px)/2);
-      }
-    }
+    // &__title {
+    //   font-size: 36px;
+    //   line-height: 36px;
+    //
+    //   &-text {
+    //     margin-right: 40px;
+    //   }
+    //
+    //   &::before {
+    //     left: -40px;
+    //
+    //     width: calc(70px + (100% - 768px)/2);
+    //   }
+    // }
 
     &__button {
       padding: 0;
@@ -272,11 +274,11 @@
       font-size: 20px;
     }
 
-    &__title {
-      &::before {
-        width: calc(110px + (100% - 1440px)/2);
-      }
-    }
+    // &__title {
+    //   &::before {
+    //     width: calc(110px + (100% - 1440px)/2);
+    //   }
+    // }
 
     &__bonus {
       margin: 0;
