@@ -33,7 +33,7 @@
 
     display: grid;
     grid-gap: 29px;
-    grid-template-columns: repeat(3, 28px);
+    grid-template-columns: repeat(auto-fit, 28px);
     justify-content: center;
     border-bottom: 1px solid $grey;
   }
@@ -50,18 +50,34 @@
     height: 28px;
   }
 
-  &__svg {
-    fill: #666666;
+  &__social-link {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 
-    &:hover {
-      fill: $active;
-    }
 
     &:active {
-      fill: $active;
       opacity: 0.3;
     }
 
+    &--github {
+      background-image: url("../images/github-icon.svg");
+
+      &:hover {
+        background-image: url("../images/github-icon--active.svg");
+      }
+    }
+
+    &--telegram {
+      background-image: url("../images/telegram-icon.svg");
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__svg {
     &--insta {
       width: 16px;
       height: 16px;
@@ -89,30 +105,36 @@
     align-items: center;
     text-decoration: none;
 
-    &:hover {
-      .main-footer__svg {
-        fill: $active;
+    &:hover,
+    &:focus {
+      .main-footer__logo-wito-divaro {
+        background-image: url(../images/witodivaro-active.svg);
       }
     }
 
     &:active {
       opacity: 0.3;
-      .main-footer__svg {
-        fill: $active;
+
+      .main-footer__logo-wito-divaro {
+        background-image: url(../images/witodivaro-active.svg);
       }
     }
   }
 
-  &__text-htmlacademy {
+  &__text-wito-divaro {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
     color: #444444;
   }
 
-  &__logo-htmlacademy {
-    width: 27px;
+  &__logo-wito-divaro {
+    width: 75px;
     height: 34px;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/witodivaro.svg);
 
     justify-self: end;
   }
@@ -148,6 +170,16 @@
   .main-footer {
     &__wrapper {
       padding: 0 110px;
+    }
+
+    &__text-wito-divaro {
+      display: none;
+    }
+
+    &__logo-wito-divaro {
+      height: 80px;
+      width: 120px;
+      background-position: center;
     }
   }
 }
