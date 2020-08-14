@@ -26,6 +26,7 @@
 
 
 Previous project: <a href = "https://github.com/disorientationinspace/HTMLAcademy__pink">PINK</a>
+Next project: <a href = "https://github.com/disorientationinspace/HTMLAcademy__keksobooking">Keksobooking</a>
 
 ----
 
