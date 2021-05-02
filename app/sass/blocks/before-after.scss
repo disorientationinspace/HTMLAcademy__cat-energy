@@ -16,16 +16,15 @@
     width: 100%;
 
     &--before {
-      clip: rect(0px, 140px, 400px, 0px);
+      // clip: rect(0px, 140px, 400px, 0px);
     }
 
     &--after {
-      clip: rect(0px, 280px, 400px, 140px);
+      // clip: rect(0px, 280px, 400px, 140px);
     }
   }
 
   &__image {
-
     width: 100%;
   }
 
@@ -87,17 +86,16 @@
     &__image-container {
       left: 50%;
       transform: translateX(-50%);
+      user-select: none;
 
       &--after {
-        clip: rect(0, 720px, 1000px, 270px);
-        width: 560px;
+        bottom: 20px;
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
       }
 
       &--before {
         top: 30px;
-        margin-left: -30px;
-        width: 680px;
-        clip: rect(0, 360px, 1000px, 0);
+        clip-path: polygon(0 0%, 50% 0%, 50% 100%, 0% 100%);
       }
     }
 
@@ -127,6 +125,7 @@
       padding-bottom: 5px;
 
       border-bottom: 1px dotted #bebebe;
+      user-select: none;
     }
 
     &__range-toggle {
@@ -156,7 +155,7 @@
 
       &::after {
         position: absolute;
-        content: '';
+        content: "";
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -168,7 +167,6 @@
         background-color: $active;
       }
     }
-
   }
 }
 
@@ -179,8 +177,8 @@
     grid-row: 1 / span 4;
     padding-bottom: 0;
 
-  &__range {
-    margin-top: 20px;
+    &__range {
+      margin-top: 20px;
+    }
   }
-}
 }
