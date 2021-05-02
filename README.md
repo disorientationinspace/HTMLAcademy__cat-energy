@@ -7,22 +7,18 @@
   - Семантика
   - Адаптивность
   - Доступность
+  - mobile first
+  - Макет из PS
+  - Flex
+  - **Grid - новый скилл**
+  - БЭМ
+  - Кросс-браузерность
 
-* mobile first
+* Препроцессоры
+  - SASS (SCSS)
 
-* Макет из PS
-
-* Flex
-
-* **Grid - новый скилл**
-
-* БЭМ
-
-* SASS (SCSS)
-
-* GULP
-
-* Кросс-браузерность
+* Сборщики
+  - GULP
 
 * Веб-шрифты
 
@@ -30,6 +26,7 @@
 
 
 Previous project: <a href = "https://github.com/disorientationinspace/HTMLAcademy__pink">PINK</a>
+Next project: <a href = "https://github.com/disorientationinspace/HTMLAcademy__keksobooking">Keksobooking</a>
 
 ----
 
